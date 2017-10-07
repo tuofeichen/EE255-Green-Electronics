@@ -109,8 +109,8 @@ int main() {
 
         if (!gpio_read_pin(GE_PBTN2)) {
           calibrate_voltage();
-          lcd_goto(0, 2);
-          lcd_puts("Stored");
+          // lcd_goto(0, 2);
+          // lcd_puts("Stored");
         }
         break;
       case DISP_CALI:
@@ -123,8 +123,8 @@ int main() {
 
         if (!gpio_read_pin(GE_PBTN2)) {
           calibrate_current();
-          lcd_goto(0, 2);
-          lcd_puts("Stored");
+          // lcd_goto(0, 2);
+          // lcd_puts("Stored");
         }
         break;
       default:
@@ -132,7 +132,7 @@ int main() {
         break;
     }
 
-    delay_ms(50);
+    delay_ms(500);
   }
 }
 
